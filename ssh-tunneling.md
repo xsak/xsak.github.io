@@ -18,20 +18,20 @@ Creating ssh tunnel(s) allows us to reach almost anything in a network where our
 #### Example scenario
 
 ```text
-                              jumphost                                 
-                           +-----------+                               
-                           |           |                               
-                           |           |                               
-                           |           |                               
-                           |           |                               
-    my laptop              |           |              remoteserver     
-+------------------+       +-----+--+--+       +----------------------+
-|                  |             ^  ^          |                      |
-|                  |             |  |          |                      |
-|                  |             |  +--------->+ port 8080            |
-|        port 8080 +<------------+             |                      |
-|                  |                           |                      |
-+------------------+                           +----------------------+
+                                  jumphost                                 
+                               +-----------+                               
+                               |           |                               
+                               |           |                               
+                               |           |                               
+                               |           |                               
+        my laptop              |           |              remoteserver     
+    +------------------+       +-----+--+--+       +----------------------+
+    |                  |             ^  ^          |                      |
+    |                  |             |  |          |                      |
+    |                  |             |  +--------->+ port 8080            |
+    |        port 8080 +<------------+             |                      |
+    |                  |                           |                      |
+    +------------------+                           +----------------------+
  ```
 
 I want to access `remoteserver` on port **8080**. You have  **ssh** access to `jumphost` in the middle which has access to `remoteserver`:8080.
@@ -41,7 +41,7 @@ I want to access `remoteserver` on port **8080**. You have  **ssh** access to `j
 Add a line to your `hosts` file:
 
 ```text
-127.0.0.1 remoteserver
+    127.0.0.1 remoteserver
 ```
 
 The `hosts` file on Linux is **`/etc/hosts`** while on Windows **`%WINDIR%\System32\drivers\etc\hosts`**
@@ -55,7 +55,7 @@ This is application dependent. Browsers have their own settings page where excep
 You have to specify the local port you want to "map" the target server's port, the target server name (which is accessible from the jumphost) and the tartget port. You may have many such tunnels in the same ssh connection.
 
 ```bash
-ssh -L 8080:remoteserver:8080 {user}@jumphost
+    ssh -L 8080:remoteserver:8080 {user}@jumphost
 ```
 
 where:
@@ -79,7 +79,7 @@ Be aware:
 Now you should be able to connect to the remote target server "seamlessly", as the remote name resolves to `127.0.0.1` which is where target port mapped on the local machine. A command like this should work:
 
 ```bash
-curl http://remoteserver:8080
+    curl http://remoteserver:8080
 ```
 
 ## Tips
