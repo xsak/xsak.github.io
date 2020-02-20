@@ -53,3 +53,5 @@ sudo systemctl enable reboot-notify.service
 sudo systemctl enable reboot-notify.timer
 sudo systemctl daemon-reload
 ```
+
+More on system timers: <https://www.freedesktop.org/software/systemd/man/systemd.time.html>
