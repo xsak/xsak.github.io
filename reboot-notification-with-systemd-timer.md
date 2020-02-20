@@ -12,7 +12,7 @@ title='Újraindítás szükséges!'
 message='A számítógépre olyan frissítések kerültek telepítésre, amik után a gépet újra kell indítani. Kérlek, valamikor indítsd újra!'
 if [ -f /var/run/reboot-required ]
 then
-    $cmd -i $icon $title $message
+    $cmd -i $icon "$title" "$message"
 fi
 
 ```
