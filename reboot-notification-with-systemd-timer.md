@@ -41,7 +41,7 @@ Description=Check if reboot needed hourly
 
 [Timer]
 OnCalendar=*-*-* *:55:55
-Unit=backup.service
+Unit=reboot-notify.service
 
 [Install]
 WantedBy=multi-user.target
