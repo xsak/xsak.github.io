@@ -2,7 +2,7 @@
 
 ## About
 
-This script backs up some app settings used by me to a directory. It depends on `7za` program, which creates zip files.
+This script backs up some app settings used by me to a specified directory. It uses the `7za` program, which creates zip files.
 
 ```bat
 rem Backup
