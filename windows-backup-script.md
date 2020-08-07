@@ -53,3 +53,11 @@ rem mRemoteNG
 copy %appdata%\mRemoteNG\confCons.xml %bck%\confCons.xml
 
 ```
+
+## Scheduling
+
+To have this script run every day at 11:52 the following command creates a Task Scheduler task under xsak folder named daily_backup:
+
+```bat
+schtasks.exe /create /tn "xsak\daily_backup" /sc daily /st 11:52  /tr "cmd /c \"C:\backupscriptdir\backup.bat\""
+```
