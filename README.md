@@ -13,3 +13,4 @@
 * [Gruvbox theme for windows terminal](windows-terminal-gruvbox.md)
 * [AutoHotKey example](autohotkey-example.md)
 * [Windows backup script example](windows-backup-script.md)
+* [Startup email notification in linux](linux_startup_notification_script.md)
