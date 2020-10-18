@@ -14,3 +14,4 @@
 * [AutoHotKey example](autohotkey-example.md)
 * [Windows backup script example](windows-backup-script.md)
 * [Startup email notification in linux](linux_startup_notification_script.md)
+* [Get the latest version number from a Github repository](get-latest-github-tag-number.md)
