@@ -4,7 +4,6 @@ The goal is to send notification when the linux box starts up or before shutting
 
 We should have a script that does the notifications (`/usr/local/bin/EmailStartStop`). It expects a working mail commanf. This example is a bit of an exaggeration as it tries to send pushbullet notifications also.
 
-
 ```sh
 #!/bin/bash
 
@@ -37,7 +36,7 @@ Start up Date and Time: "`date`
 SHUTDOWNBODY="Uhm, I just want you to know that $HOSTN is shutting down.
 
 Runlevel: "`/sbin/runlevel`"
-Shutdown Date and Time: "`date`" 
+Shutdown Date and Time: "`date`"
 Uptime: "`uptime`
 LOCKFILE=/var/local/SystemEmail
 RETVAL=0
@@ -82,7 +81,7 @@ do
      sleep 2
      let val--
   fi
-done 
+done
 echo "Pushbullet message..."
 /usr/local/bin/pushbullet.sh "${RESTARTSUBJECT}" "${RESTARTBODY}"
 echo -n $"Sending Startup Email: "
