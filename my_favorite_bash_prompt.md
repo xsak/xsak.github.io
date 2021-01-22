@@ -1,3 +1,5 @@
+# My favorite bash prompt
+
 Add to `~/.bashrc` file:
 
 ```bash
