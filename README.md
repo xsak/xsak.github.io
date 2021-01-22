@@ -15,6 +15,6 @@
 * [Windows backup script example](windows-backup-script.md)
 * [Startup email notification in linux](linux_startup_notification_script.md)
 * [Get the latest version number from a Github repository](get-latest-github-tag-number.md)
-* [My favorite bash prompt](my_favorite_bach_prompt.md)
+* [My favorite bash prompt](my_favorite_bash_prompt.md)
 * [Enter to tmux session at login](enter_tmux_session_at_login.md)
 * [Start SSH agent](start_ssh_agent.md)
