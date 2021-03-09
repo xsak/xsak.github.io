@@ -1,5 +1,3 @@
-classes: wide
----
 # Windows backup script example
 
 ## About
