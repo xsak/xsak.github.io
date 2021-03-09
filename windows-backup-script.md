@@ -6,7 +6,7 @@ This script backs up some app settings used by me to a specified directory. It u
 
 ```bat
 rem Backup
-set bck="C:\Users\zte\OneDrive - Sigma Technology\Documents\backup"
+set bck="C:\Users\MyUser\OneDrive\Documents\backup"
 cd %bck%
 set sevenz="C:\app\bin\7za.exe"
 
@@ -29,14 +29,14 @@ rem Atom
 %sevenz% a %bck%\xsak-atom.7z %userprofile%\.atom
 call %userprofile%\AppData\Local\atom\bin\apm.cmd list --installed --bare > %bck%\atom-pkg.list
 rem AutoHotKey
-copy %userprofile%\xsak.ahk %bck%\xsak.ahk
+copy /Y %userprofile%\xsak.ahk %bck%\xsak.ahk
 rem VSCode
 %sevenz% a %bck%\xsak-vscode-ext.7z %userprofile%\.vscode
 %sevenz% a %bck%\xsak-vscode.7z %appdata%\Code
 rem Start Menu
 %sevenz% a %bck%\xsak-startmenu.7z "%appdata%\Microsoft\Windows\Start Menu\Programs\"
 rem ConEmu
-%sevenz% a %bck%\xsak-conemu.7z %appdata%\ConEmu.xml
+%sevenz% a %bck%\xsak-conemu.7z C:\app\ConEMU\ConEmu.xml
 rem Sublime Text
 rem %sevenz% a %bck%\xsak-sublime.7z "C:\app\SublimeText"
 rem FAR manager
