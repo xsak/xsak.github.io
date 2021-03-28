@@ -20,6 +20,19 @@ Supported escape sequences:
      ~~   - send the escape character by typing it twice
 ```
 
+In the command line you can get help how to add or remove port forwards typing `-h`:
+
+```
+ssh> -h
+Commands:
+      -L[bind_address:]port:host:hostport    Request local forward
+      -R[bind_address:]port:host:hostport    Request remote forward
+      -D[bind_address:]port                  Request dynamic forward
+      -KL[bind_address:]port                 Cancel local forward
+      -KR[bind_address:]port                 Cancel remote forward
+      -KD[bind_address:]port                 Cancel dynamic forward
+```
+
 (Note that escapes are only recognized immediately after newline.)
 You can close the list of Escape sequences by hitting `enter`.
 
