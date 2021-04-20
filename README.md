@@ -19,3 +19,4 @@
 * [My favorite bash prompt](my_favorite_bash_prompt.md)
 * [Enter to tmux session at login](enter_tmux_session_at_login.md)
 * [Start SSH agent](start_ssh_agent.md)
+* [Boot Linux ISO from disk](linux-boot-iso-from-disk.md)
